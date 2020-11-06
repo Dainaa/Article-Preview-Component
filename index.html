@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <title>Article Preview Component</title>
+
+</head>
+
+<body>
+    <div class="basecontainer">
+        <div class="bg-container">
+            <div class="container">
+                <h3 class="heading">
+                    Shift the overall look and feel by adding these wonderful
+                    touches to furniture in your home</h3>
+
+                <p class="article-text"> Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips
+                    to help you make any room feel complete.
+                </p>
+
+            </div>
+            <div class="author">
+                <img src="img/avatar-michelle.jpg" alt="Author picture" class="author-pic">
+                <div class="author-details">
+                    <p class="authorname">
+                        Michelle Appleton
+                    </p>
+                    <p class="date">28 June 2020</p>
+                </div>
+            </div>
+            <div class="share tooltip" >
+                <img src="img/icon-share.svg" alt="Share button" class="share-button" id ="sharebtn" onclick="showtooltip()">
+                <div class="tooltip-icons" id ="popup" >
+                    <ul>
+                        <li class="tip"><a href="#" class="share-text">
+                                <p> SHARE </p>
+                            </a> </li>
+                        <li class="tip"><a href="#" class="facebook"><img src="img/icon-facebook.svg"
+                                    alt="facebook icon"></a></li>
+                        <li class="tip"><a href="#" class="twitter"><img src="img/icon-twitter.svg"
+                                    alt="twitter icon"></a></li>
+                        <li class="tip"><a href="#" class="pinterest"><img src="img/icon-pinterest.svg"
+                                    alt="pinterest icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+function showtooltip() {
+  var shareinformation = document.getElementById("popup");
+  if (shareinformation.style.display === "none") {
+    shareinformation.style.display = "inline-block";
+  } else {
+    shareinformation.style.display = "none";
+  }
+}
+
+</script>
+
+</html>
