@@ -43,156 +43,6 @@ body{
 }
 
 
-/*Desktop View*/
-
-@media screen and (min-width:1440px){
-.basecontainer{ 
-    background-color: white;
-    border-radius: 12px;
-    height:35%;
-    width:45%;
-    position: absolute;
-    z-index:2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);  
-    box-shadow: 0px 20px 40px -20px hsl(0, 0%, 67%);   
-
-
-}
-.bg-container{
-    background-image: url(../img/drawers.jpg);
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    height:100%;
-    background-size:39%;
-    float: left;
-}
-
-
-.heading{
-    position: relative;
-    z-index:4;
-    left: 45%;
-    margin-top: .5em;
-    padding-top: 1em;
-    letter-spacing: 1px;
-    padding-right: 55%;
-}
-.article-text{
-    position: relative;
-    z-index:4;
-    font-size: 13px;
-    margin-top: -0.5em;
-    padding-right: 50%;
-    left: 45%;
-    color:hsl(212, 23%, 69%)
-    
-}
-.author-pic{
-    border-radius: 50%;
-    width: 2.5em;
-    margin-top: 0.5em;
-}
-    
-.authorname{
-    margin-top: 2em;
-    margin-left: 4em;
-    
-}
-.date{
-   
-    margin-left: 4em;
-    margin-top: -1em;
-
-}
-.author{
-    position: relative;
-    z-index:3;
-    left:45%;
-}
-.author-details{
-    position: relative;
-    z-index:4;
-    top: -70px;
-}
-
-.share{
-    position:relative;
-    left: 85%;
-    bottom: 7em;
-
-}
-.share:hover{
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: hsl(218, 20%, 29%);
-    
-    
-}
-
-.tooltip .tooltip-icons{  
-    position: absolute;
-    left:-6.5em;
-    top:-3.8em;
-    display: inline-block;
-    visibility: hidden;
-    background-color: rgb(72, 85, 106);
-    border-radius: 10px;
-    box-shadow: 0px 20px 30px -20px hsl(0, 0%, 67%);   
-    width: 240px;
-    height:50px;
-    
-}
-
-
-.tooltip:hover .tooltip-icons{
-    visibility: visible;
-}
-
-
-.active, .tooltip-icons::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    transform: translateX(-50%);
-    border-style: solid;
-    border-width: 12px 12px 0 12px;
-    border-color: rgb(72, 85, 106) transparent transparent;
-}
-
-.tooltip:hover .tooltip-icons ul li{
-    list-style-type: none;
-
-}
-
-
-.tooltip:hover .tooltip-icons ul li:hover{
-    filter:invert(100%);
-
-}
-.tooltip:hover .tooltip-icons ul li .share-text{
-    color:hsl(212, 23%, 69%);
-}
-.share-text{
-    position: relative;
-    top:-10px;
-}
-.tooltip:hover .tooltip-icons ul {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    left:-1.2em;
-    
-}
-.share-text{
-    letter-spacing:4px;
-    font-size: 12px;
-    text-decoration: none;
-}
-}
 
 /*Mobile View*/
 @media only screen and (max-width:380px){
@@ -304,3 +154,504 @@ body{
 }
 
 }
+/*Mobile View*/
+@media only screen and (min-width:410px){
+        
+    .basecontainer{ 
+        background-color: white;
+        border-radius: 12px;
+        height:78%;
+        width:80%;
+        position: absolute;
+        z-index:2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);  
+        box-shadow: 0px 20px 40px -20px hsl(0, 0%, 67%);   
+    
+    }
+    .bg-container{
+        background-image: url(../img/drawersmobile.jpg);
+        float:right;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        background-size:100%;
+    }
+    
+    .heading{
+        position: relative;
+        z-index:4;
+        margin-top: 65%;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-size: 16px;
+     }
+    .article-text{
+        position: relative;
+        padding-left: 2.5em;
+        padding-right: 2em;
+        line-height: 1.5em;
+        letter-spacing: 0.25px;
+        font-size: 14px;
+        margin-top: -0.5em;
+        color:hsl(212, 23%, 69%)
+        
+    }
+    
+    .author-pic{
+        border-radius: 50%;
+        width: 3em;
+        margin-top: 2em;
+        margin-left: 3em;
+    }
+    .authorname{
+        font-size: 13px;
+        margin-top: -3.8em;
+        margin-left: 9.5em;
+        
+    }
+    .date{
+        font-size: 13px;
+        margin-left: 9.5em;
+        margin-top: -0.6em;
+    }
+    .share{
+        position:relative;
+        transform:scale(1);
+        left:80%;
+        top:-3em;
+    }
+    
+    .share-text{
+        letter-spacing:4px;
+        font-size: 12px;
+        text-decoration: none;
+        color:hsl(212, 23%, 69%);
+    }
+    
+    
+    .tooltip .tooltip-icons{  
+        position: absolute;
+        display: none;
+        background-color: rgb(72, 85, 106);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height:4.5em;
+        width:330px;
+        left: -16.5em;
+        top:-10px;
+    }
+    
+    
+    .tooltip .tooltip-icons ul{
+        list-style-type: none;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        
+        
+    }
+    .tooltip .tooltip-icons ul li{
+        margin-left:1em;
+        
+    }
+    
+    .tooltip:active .tooltip-icons ul li:active{
+        filter: invert(100%);
+    }
+    
+    }
+    
+    
+/*Tablet View*/
+
+@media (min-width:600px){
+    .basecontainer{ 
+        background-color: white;
+        border-radius: 12px;
+        height:65%;
+        width:50%;
+        position: absolute;
+        z-index:2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);  
+        box-shadow: 0px 20px 40px -20px hsl(0, 0%, 67%);   
+    
+    }
+    .bg-container{
+        background-image: url(../img/drawersmobile.jpg);
+        float:right;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        background-size:100%;
+    }
+    
+    .heading{
+        position: relative;
+        z-index:4;
+        margin-top: 65%;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-size: 20px;
+     }
+    .article-text{
+        position: relative;
+        padding-left: 2.5em;
+        padding-right: 2em;
+        line-height: 1.5em;
+        letter-spacing: 0.25px;
+        font-size: 17px;
+        margin-top: -0.5em;
+        color:hsl(212, 23%, 69%)
+        
+    }
+    
+    .author-pic{
+        border-radius: 50%;
+        width: 4em;
+        margin-top: 1.5em;
+        margin-left: 3em;
+    }
+    .authorname{
+        font-size: 15px;
+        margin-top: -3.8em;
+        margin-left: 9em;
+        
+    }
+    .date{
+        font-size: 15px;
+        margin-left: 9em;
+        margin-top: -0.6em;
+    }
+    .share{
+        position:relative;
+        transform: scale(1.2);
+        left:80%;
+        top:-3em;
+    }
+    
+    .share-text{
+        letter-spacing:4px;
+        font-size: 12px;
+        text-decoration: none;
+        color:hsl(212, 23%, 69%);
+    }
+    
+    
+    .tooltip .tooltip-icons{  
+        position: absolute;
+        display: none;
+        background-color: rgb(72, 85, 106);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height:4.5em;
+        width:320px;
+        left: -15.9em;
+        top:-20px;
+    }
+    
+    
+    .tooltip .tooltip-icons ul{
+        list-style-type: none;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        
+        
+    }
+    .tooltip .tooltip-icons ul li{
+        margin-left:1em;
+        
+    }
+    
+    .tooltip:active .tooltip-icons ul li:active{
+        filter: invert(100%);
+    }
+    
+    }
+
+    /*1024 px*/
+    
+@media (min-width:1023px){
+.basecontainer{ 
+    background-color: white;
+    border-radius: 12px;
+    height:60%;
+    width:50%;
+    position: absolute;
+    z-index:2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    box-shadow: 0px 20px 40px -20px hsl(0, 0%, 67%);   
+
+}
+.bg-container{
+    background-image: url(../img/drawersmobile.jpg);
+    float:right;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size:100%;
+}
+
+.heading{
+    position: relative;
+    z-index:4;
+    margin-top: 65%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-size: 25px;
+ }
+.article-text{
+    position: relative;
+    padding-left: 2.5em;
+    padding-right: 2em;
+    line-height: 1.5em;
+    letter-spacing: 0.25px;
+    font-size: 22px;
+    margin-top: 1em;
+    color:hsl(212, 23%, 69%)
+    
+}
+
+.author-pic{
+    border-radius: 50%;
+    width: 5em;
+    margin-top: 1.3em;
+    margin-left: 3em;
+}
+.authorname{
+    font-size: 20px;
+    margin-top: -3.8em;
+    margin-left: 9em;
+    
+}
+.date{
+    font-size: 20px;
+    margin-left: 9em;
+    margin-top: -0.6em;
+}
+.share{
+    position:relative;
+    transform: scale(1.4);
+    left:85%;
+    top:-4em;
+}
+
+.share-text{
+    letter-spacing:4px;
+    font-size: 12px;
+    text-decoration: none;
+    color:hsl(212, 23%, 69%);
+}
+
+
+.tooltip .tooltip-icons{  
+    position: absolute;
+    display: none;
+    background-color: rgb(72, 85, 106);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:4.5em;
+    width:365px;
+    left: -19.1em;
+    top:-20px;
+}
+
+.facebook{
+    position: relative;
+    top:-.5em;
+}
+.twitter{
+    position: relative;
+    top: -.5em;
+}
+.pinterest{
+    position: relative;
+    top: -.5em;
+}
+.tooltip .tooltip-icons ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    
+    
+}
+.tooltip .tooltip-icons ul li{
+    margin-left:1em;
+    
+}
+
+.tooltip:active .tooltip-icons ul li:active{
+    filter: invert(100%);
+}
+
+}
+
+/*Desktop View*/
+
+@media screen and (min-width:1439px){
+    .basecontainer{ 
+        background-color: white;
+        border-radius: 12px;
+        height:35%;
+        width:45%;
+        position: absolute;
+        z-index:2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);  
+        box-shadow: 0px 20px 40px -20px hsl(0, 0%, 67%);   
+    
+     
+    }
+    .bg-container{
+        background-image: url(../img/drawers.jpg);
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        height:100%;
+        background-size: 40%;
+        float: left;
+    }
+    
+    
+    .heading{
+        position: relative;
+        z-index:4;
+        left: 40%;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: .5em;
+        padding-top: 1em;
+        letter-spacing: 1px;
+        padding-right: 55%;
+    }
+    .article-text{
+        position: relative;
+        z-index:4;
+        font-size: 13px;
+        margin-top: -0.5em;
+        padding-right: 40%;
+        left: 40%;
+        color:hsl(212, 23%, 69%)
+        
+    }
+    .author-pic{
+        border-radius: 50%;
+        width: 2.5em;
+        margin-top: 0.5em;
+    }
+        
+    .authorname{
+        margin-top: 2em;
+        margin-left: 4em;
+        font-size: 12px;
+        
+    }
+    .date{
+        font-size: 12px;
+        margin-left: 4em;
+        margin-top: -1em;
+    
+    }
+    .author{
+        position: relative;
+        z-index:3;
+        left:38%;
+    }
+    .author-details{
+        position: relative;
+        z-index:4;
+        top: -65px;
+        left:9%;
+    }
+    
+    .share{
+        position:relative;
+        left: 85%;
+        top:-6.4em;
+        transform: scale(1);
+    
+    }
+    .share:hover{
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: hsl(218, 20%, 29%);
+        
+        
+    }
+    
+    .tooltip .tooltip-icons{  
+        position: absolute;
+        left:-6.5em;
+        top:-3.8em;
+        display: inline-block;
+        visibility: hidden;
+        background-color: rgb(72, 85, 106);
+        border-radius: 10px;
+        box-shadow: 0px 20px 30px -20px hsl(0, 0%, 67%);   
+        width: 240px;
+        height:50px;
+        
+    }
+    
+    
+    .tooltip:hover .tooltip-icons{
+        visibility: visible;
+    }
+    
+    
+    .active, .tooltip-icons::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+        border-style: solid;
+        border-width: 12px 12px 0 12px;
+        border-color: rgb(72, 85, 106) transparent transparent;
+    }
+    
+    .tooltip:hover .tooltip-icons ul li{
+        list-style-type: none;
+    
+    }
+    
+    
+    .tooltip:hover .tooltip-icons ul li:hover{
+        filter:invert(100%);
+    
+    }
+    .tooltip:hover .tooltip-icons ul li .share-text{
+        color:hsl(212, 23%, 69%);
+    }
+    .share-text{
+        position: relative;
+        top:-10px;
+    }
+    .tooltip:hover .tooltip-icons ul {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        left:-1.2em;
+        
+    }
+    .share-text{
+        letter-spacing:4px;
+        font-size: 12px;
+        text-decoration: none;
+    } 
+    }
+    
